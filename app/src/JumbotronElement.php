@@ -9,7 +9,7 @@ class JumbotronElement extends ElementContent {
         'FullWidth' => 'Boolean',
     ];
 
-    private static $icon = 'font-icon-menu';
+    private static $icon = 'font-icon-monitor';
 
     private static $table_name = 'JumbotronElements';
 

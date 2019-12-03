@@ -1,5 +1,20 @@
 @import "custom";
 @import "components/_carousel.scss";
+@import "components/_forms.scss";
+@import "../node_modules/aos/dist/aos.css";
+
+body {
+    overflow-x: hidden;
+}
+
+h1, h2 h3, h4, h5, h6 {
+    font-family: $font-family-sans-serif;
+}
+
+.element {
+    margin-top: $grid-gutter-width / 2;
+    margin-bottom: $grid-gutter-width / 2;
+}
 
 table {
     @extend .table;

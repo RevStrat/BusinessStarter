@@ -18,7 +18,7 @@ class MediaElement extends ElementContent {
         'Image',
     ];
 
-    private static $icon = 'font-icon-menu';
+    private static $icon = 'font-icon-block-banner';
 
     private static $table_name = 'MediaElements';
 

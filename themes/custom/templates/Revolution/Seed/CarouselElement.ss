@@ -12,7 +12,7 @@
     <div class="carousel-inner">
         <% loop $Slides %>
             <div class="carousel-item<% if $First %> active<% end_if %>"<% if $Interval %> data-interval="$Interval"<% end_if %>>
-                <img src="$Image.URL" class="d-block w-100" alt="$Image.Title" />
+                <img src="$Image.FocusFillMax(1920,1080).URL" class="d-block w-100" alt="$Image.Title" />
                 <% if $Caption %>
                     <div class="carousel-caption d-none d-md-block">
                         $Caption

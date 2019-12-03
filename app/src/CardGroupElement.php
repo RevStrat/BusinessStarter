@@ -3,6 +3,7 @@
 namespace Revolution\Seed;
 
 use DNADesign\Elemental\Models\BaseElement;
+use SilverStripe\Versioned\Versioned;
 use SilverStripe\Forms\DropdownField;
 use SilverStripe\Forms\GridField\GridField;
 use SilverStripe\Forms\GridField\GridFieldConfig_RecordEditor;
@@ -21,7 +22,7 @@ class CardGroupElement extends BaseElement {
       'Cards',
     ];
 
-    private static $icon = 'font-icon-menu';
+    private static $icon = 'font-icon-page-multiple';
 
     private static $table_name = 'CardGroupElements';
 
@@ -58,4 +59,8 @@ class GroupedCard extends CardElement {
   ];
 
   private static $table_name = "GroupedCards";
+
+  private static $extensions = [
+      Versioned::class,
+  ];
 }

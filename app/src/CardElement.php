@@ -35,7 +35,7 @@ class CardElement extends ElementContent {
       'Image',
     ];
 
-    private static $icon = 'font-icon-menu';
+    private static $icon = 'font-icon-p-article';
 
     private static $table_name = 'CardElements';
 
@@ -166,9 +166,5 @@ class CardElement extends ElementContent {
       }
 
       return $classes;
-    }
-
-    public function OrientationForBody() {
-
     }
 }

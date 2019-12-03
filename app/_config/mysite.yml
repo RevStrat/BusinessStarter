@@ -21,9 +21,9 @@ Revolution\Seed\CardGroupItem:
     - TheWebmen\ElementalGrid\Extensions\BaseElementExtension
     - Revolution\Seed\ElementExtension
 
-TheWebmen\ElementalGrid\Models\ElementRow:
-  extensions:
-    - Revolution\Seed\ElementRowExtension
+#TheWebmen\ElementalGrid\Models\ElementRow:
+#  extensions:
+#    - Revolution\Seed\ElementRowExtension
 
 #DNADesign\Elemental\Models\ElementalArea:
 #  extensions:
@@ -33,9 +33,9 @@ TheWebmen\ElementalGrid\Models\ElementRow:
 #  extensions:
 #    - Revolution\Seed\EditableFormFieldExtension
 
-DNADesign\ElementalUserForms\Model\ElementForm:
-  block_default_userforms_css: true
-  block_default_userforms_js: true
+#DNADesign\ElementalUserForms\Model\ElementForm:
+#  block_default_userforms_css: true
+#  block_default_userforms_js: true
 
 SilverStripe\UserForms\Model\UserDefinedForm:
   extensions:

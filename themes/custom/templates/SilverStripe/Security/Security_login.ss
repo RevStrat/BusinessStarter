@@ -24,50 +24,9 @@ Habitat.life. by Rob Rankin (revolutionstrategy.com, @revstrat) for Habitat Life
     <link rel="shortcut icon" href="themes/habitat/images/favicon.ico" />
 </head>
 <body class="LoginPage typography" <% if $i18nScriptDirection %>dir="$i18nScriptDirection"<% end_if %>>
-    <% with SiteConfig %>
-    <picture class="background">
-        <source media="(min-width: 1440px)" srcset="$AgeGateBackground.FocusFill(1920, 1080).URL" />
-        <source media="(min-width: 1024px)" srcset="$AgeGateBackground.FocusFill(1200, 1200).URL" />
-        <source media="(min-width: 768px)" srcset="$AgeGateBackground.FocusFill(992, 992).URL" />
-        <img src="$AgeGateBackground.FocusFill(768, 768).URL" alt="Background image" />
-    </picture>
-    <% if $AgeGateVideoSmall && $AgeGateVideoMedium && $AgeGateVideoLarge %>
-        <video class="background" autoplay muted loop playsinline poster="$AgeGateBackground.URL">
-            
-        </video>
-    <% end_if %>
-    <% end_with %>
     <div class="login_window">
         $Form
     </div>
-    <% with SiteConfig %>
-        <% if $AgeGateVideoSmall && $AgeGateVideoMedium && AgeGateVideoLarge %>
-            <script type="text/javascript">
-                const bgVideos = {
-                    "small": {src: "$AgeGateVideoSmall.URL", mimeType: "$AgeGateVideoSmall.MimeType"},
-                    "medium": {src: "$AgeGateVideoMedium.URL", mimeType: "$AgeGateVideoMedium.MimeType"},
-                    "large": {src: "$AgeGateVideoLarge.URL", mimeType: "$AgeGateVideoLarge.MimeType"}
-                };
-                function updateLoginVideo() {
-                    const video = document.querySelectorAll('.LoginPage video.background')[0];
-
-                    var source = document.createElement('source');
-                    var currentSize = "large";
-                    if (window.innerWidth < 768) {
-                        currentSize = "small"
-                    } else if (window.innerWidth < 992) {
-                        currentSize = "medium"
-                    }
-                    source.setAttribute('src', bgVideos[currentSize].src);
-                    source.setAttribute('type', bgVideos[currentSize].mimeType);
-                    video.innerHTML = "";
-                    video.appendChild(source);
-                }
-                window.addEventListener('resize', updateLoginVideo);
-                updateLoginVideo();
-            </script>
-        <% end_if %>
-    <% end_with %>
     <% include Analytics %>
 </body>
 </html>

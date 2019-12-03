@@ -41,17 +41,21 @@ class ElementExtension extends DataExtension {
           break;
         case 'DropdownField':
           $field->addExtraClass('custom-select');
+          $field->addExtraClass('form-control');
           $field->customise([
             'ColClasses' => $this->owner->ColClasses(),
           ]);    
           break;
         case 'FileField':
           $field->addExtraClass('custom-file-input');
+          $field->addExtraClass('form-control');
           $field->customise([
             'FileField' => true,
             'ColClasses' => $this->owner->ColClasses(),
           ]);
           break;
+        case 'TextField':
+          $field->addExtraClass('form-control');
         default:
           $field->customise([
             'ColClasses' => $this->owner->ColClasses(),

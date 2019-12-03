@@ -3,6 +3,7 @@
 namespace Revolution\Seed;
 
 use DNADesign\Elemental\Models\BaseElement;
+use SilverStripe\Versioned\Versioned;
 use SilverStripe\Forms\DropdownField;
 use SilverStripe\Forms\GridField\GridField;
 use SilverStripe\Forms\GridField\GridFieldConfig_RecordEditor;
@@ -26,7 +27,7 @@ class CarouselElement extends BaseElement {
       'Slides',
     ];
 
-    private static $icon = 'font-icon-menu';
+    private static $icon = 'font-icon-block-carousel';
 
     private static $table_name = 'CarouselElements';
 
@@ -76,6 +77,10 @@ class Slide extends DataObject {
 
   private static $owns = [
     'Image',
+  ];
+
+  private static $extensions = [
+      Versioned::class,
   ];
 
   private static $default_sort = "SortOrder ASC";
