@@ -1,0 +1,24 @@
+{
+    "name": "revstrat/bootstrap",
+    "description": "Bootstrap base theme",
+    "type": "silverstripe-theme",
+    "keywords": ["silverstripe", "theme"],
+    "authors": [
+        {
+            "name": "Rob Rankin (Revolution Strategy)",
+            "homepage": "https://revolutionstrategy.com"
+        }
+    ],
+    "require": {
+        "composer/installers": "*",
+        "silverstripe/framework": ">=4"
+    },
+	"extra": {
+        "expose": [
+            "css",
+            "images",
+            "javascript",
+            "fonts"
+        ]
+	}
+}

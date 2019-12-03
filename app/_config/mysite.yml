@@ -1,0 +1,99 @@
+---
+Name: habitat
+After: "*"
+---
+SilverStripe\Core\Manifest\ModuleManifest:
+  project: app
+
+SilverStripe\View\SSViewer:
+  rewrite_hash_links: false
+
+DNADesign\Elemental\Extensions\ElementalAreasExtension:
+  ignored_classes:
+    - SilverStripe\Blog\Model\BlogPost
+
+DNADesign\Elemental\Models\BaseElement:
+  extensions:
+    - Revolution\Seed\ElementExtension
+
+Revolution\Seed\CardGroupItem:
+  extensions:
+    - TheWebmen\ElementalGrid\Extensions\BaseElementExtension
+    - Revolution\Seed\ElementExtension
+
+TheWebmen\ElementalGrid\Models\ElementRow:
+  extensions:
+    - Revolution\Seed\ElementRowExtension
+
+#DNADesign\Elemental\Models\ElementalArea:
+#  extensions:
+#    - Revolution\Seed\ElementalAreaExtension
+
+#SilverStripe\UserForms\Model\EditableFormField:
+#  extensions:
+#    - Revolution\Seed\EditableFormFieldExtension
+
+DNADesign\ElementalUserForms\Model\ElementForm:
+  block_default_userforms_css: true
+  block_default_userforms_js: true
+
+SilverStripe\UserForms\Model\UserDefinedForm:
+  extensions:
+    - Revolution\Seed\CannotCreateExtension
+
+SilverStripe\UserForms\Form\UserForm:
+  extensions:
+    - Revolution\Seed\UserFormExtension
+
+SilverStripe\UserForms\Model\EditableFormField:
+  extensions:
+    - TheWebmen\ElementalGrid\Extensions\BaseElementExtension
+    - Revolution\Seed\ElementExtension
+
+SilverStripe\UserForms\Model\EditableTextField:
+  extensions:
+    - Revolution\Seed\FormFieldExtension
+
+SilverStripe\UserForms\Model\EditableCheckbox:
+  extensions:
+    - Revolution\Seed\FormFieldExtension
+
+SilverStripe\UserForms\Model\EditableCountryDropdown:
+  extensions:
+    - Revolution\Seed\FormFieldExtension
+
+SilverStripe\UserForms\Model\EditableDateField:
+  extensions:
+    - Revolution\Seed\FormFieldExtension
+
+SilverStripe\UserForms\Model\EditableDropdown:
+  extensions:
+    - Revolution\Seed\FormFieldExtension
+
+SilverStripe\UserForms\Model\EditableEmailField:
+  extensions:
+    - Revolution\Seed\FormFieldExtension
+
+SilverStripe\UserForms\Model\EditableFileField:
+  extensions:
+    - Revolution\Seed\FormFieldExtension
+
+SilverStripe\UserForms\Model\EditableMultipleOptionField:
+  extensions:
+    - Revolution\Seed\FormFieldExtension
+
+SilverStripe\UserForms\Model\EditableNumericField:
+  extensions:
+    - Revolution\Seed\FormFieldExtension
+
+SilverStripe\UserForms\Model\EditableRadioField:
+  extensions:
+    - Revolution\Seed\FormFieldExtension
+
+#SilverStripe\Blog\Model\BlogPost:
+#  extensions:
+#    - Revolution\Seed\BlogPostExtension
+
+Silverstripe\SiteConfig\SiteConfig:
+  extensions:
+    - Revolution\Seed\CustomSiteConfig

@@ -1,0 +1,34 @@
+@import "custom";
+@import "components/_carousel.scss";
+
+table {
+    @extend .table;
+}
+
+.captionImage {
+    @extend .figure;
+    img {
+        @extend .figure-img;
+        @extend .img-fluid;
+        @extend .rounded;
+    }
+    .caption {
+        @extend .figure-caption;
+    }
+}
+
+.embed {
+    @extend .embed-responsive;   
+    @extend .embed-responsive-16by9;
+    max-width: 100%;
+}
+
+.break-out {
+    flex: none;
+    max-width: calc(100vw);
+    width: calc(100vw);
+    position: relative;
+    left: calc(-1 * (100vw - 100%) / 2);
+    padding-left: 0;
+    padding-right: 0;
+}
