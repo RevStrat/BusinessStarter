@@ -125,6 +125,7 @@ class CardElement extends ElementContent {
           )
         );
 
+        $this->extend('updateCMSFields', $fields);
         return $fields;
     }
 

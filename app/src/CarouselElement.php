@@ -46,6 +46,7 @@ class CarouselElement extends BaseElement {
       $conf->addComponent(new GridFieldSortableRows('SortOrder'));
       $fields->addFieldToTab('Root.Slides', new GridField('Slides', 'Slides', $this->Slides(), $conf));
 
+      $this->extend('updateCMSFields', $fields);
       return $fields;
     }
 

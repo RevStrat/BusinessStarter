@@ -45,6 +45,7 @@ class CardGroupElement extends BaseElement {
       $conf->addComponent(new GridFieldSortableRows('SortOrder'));
       $fields->addFieldToTab('Root.Cards', new GridField('Cards', 'Cards', $this->Cards(), $conf));
 
+      $this->extend('updateCMSFields', $fields);
       return $fields;
     }
 }

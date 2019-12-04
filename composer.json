@@ -16,7 +16,8 @@
         "silverstripers/seo": "dev-master",
         "bummzack/sortablefile": "^2.0",
         "sheadawson/silverstripe-linkable": "^2.0",
-        "silverstripers/elemental-search": "dev-master"
+        "silverstripers/elemental-search": "dev-master",
+        "tractorcow/silverstripe-fluent": "^4"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7"
