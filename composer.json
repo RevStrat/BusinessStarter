@@ -15,7 +15,8 @@
         "thewebmen/silverstripe-elemental-grid": "dev-bootstrap4",
         "silverstripers/seo": "dev-master",
         "bummzack/sortablefile": "^2.0",
-        "sheadawson/silverstripe-linkable": "^2.0"
+        "sheadawson/silverstripe-linkable": "^2.0",
+        "silverstripers/elemental-search": "dev-master"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7"

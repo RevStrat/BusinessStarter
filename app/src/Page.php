@@ -8,6 +8,10 @@ namespace {
     //use SilverStripe\Forms\HTMLEditor\HTMLEditorField;
 
     class Page extends SiteTree {
+        private static $db = [
+            'ShowInFooter' => 'Boolean'
+        ];
+
         public function TreePath($crumbs = null) {
             if (!$crumbs) {
                 $crumbs = new ArrayList();

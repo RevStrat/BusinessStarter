@@ -19,7 +19,7 @@ import bsCustomFileInput from 'bs-custom-file-input'
 (function() {
   'use strict';
   AOS.init({
-    once: false
+    once: true
   })
   bsCustomFileInput.init()
   window.addEventListener('load', function() {

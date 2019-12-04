@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "afd682bd5cfabf3abc4a3aa9d08f661a",
+    "content-hash": "22b489748baf1da4b53838f8f105ac66",
     "packages": [
         {
             "name": "bramus/ansi-php",
@@ -490,6 +490,122 @@
                 "twitter cards"
             ],
             "time": "2019-09-16T19:34:02+00:00"
+        },
+        {
+            "name": "guzzlehttp/guzzle",
+            "version": "6.3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/guzzle.git",
+                "reference": "407b0cb880ace85c9b63c5f9551db498cb2d50ba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/407b0cb880ace85c9b63c5f9551db498cb2d50ba",
+                "reference": "407b0cb880ace85c9b63c5f9551db498cb2d50ba",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/promises": "^1.0",
+                "guzzlehttp/psr7": "^1.4",
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "ext-curl": "*",
+                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.4 || ^7.0",
+                "psr/log": "^1.0"
+            },
+            "suggest": {
+                "psr/log": "Required for using the Log middleware"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "6.3-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/functions_include.php"
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle is a PHP HTTP client library",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "client",
+                "curl",
+                "framework",
+                "http",
+                "http client",
+                "rest",
+                "web service"
+            ],
+            "time": "2018-04-22T15:46:56+00:00"
+        },
+        {
+            "name": "guzzlehttp/promises",
+            "version": "v1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/promises.git",
+                "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/a59da6cf61d80060647ff4d3eb2c03a2bc694646",
+                "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Promise\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle promises library",
+            "keywords": [
+                "promise"
+            ],
+            "time": "2016-12-20T10:07:11+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -2699,6 +2815,51 @@
                 "versioned"
             ],
             "time": "2019-08-18T23:40:30+00:00"
+        },
+        {
+            "name": "silverstripers/elemental-search",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SilverStripers/elemental-seach.git",
+                "reference": "9b8fb4302257421219585e1bdf325b02f0dba771"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SilverStripers/elemental-seach/zipball/9b8fb4302257421219585e1bdf325b02f0dba771",
+                "reference": "9b8fb4302257421219585e1bdf325b02f0dba771",
+                "shasum": ""
+            },
+            "require": {
+                "dnadesign/silverstripe-elemental": "*",
+                "guzzlehttp/guzzle": "6.3.3"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "expose": [],
+                "installer-name": "elemental-search"
+            },
+            "autoload": {
+                "psr-4": []
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Nivanka Fonseka",
+                    "email": "nivanka@silverstripers.com"
+                }
+            ],
+            "description": "Full text search for elemental module",
+            "keywords": [
+                "elemental",
+                "full text",
+                "search",
+                "silverstripe"
+            ],
+            "time": "2019-12-01T02:24:05+00:00"
         },
         {
             "name": "silverstripers/seo",
@@ -4946,7 +5107,8 @@
         "silverstripe/recipe-cms": 0,
         "tractorcow/silverstripe-colorpicker": 20,
         "thewebmen/silverstripe-elemental-grid": 20,
-        "silverstripers/seo": 20
+        "silverstripers/seo": 20,
+        "silverstripers/elemental-search": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

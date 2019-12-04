@@ -16,10 +16,26 @@ DNADesign\Elemental\Models\BaseElement:
   extensions:
     - Revolution\Seed\ElementExtension
 
-Revolution\Seed\CardGroupItem:
+DNADesign\Elemental\Models\ElementContent:
   extensions:
-    - TheWebmen\ElementalGrid\Extensions\BaseElementExtension
-    - Revolution\Seed\ElementExtension
+    - SilverStripers\ElementalSearch\Extensions\ElementDocumentGeneratorExtension
+
+DNADesign\Elemental\Models\CardElement:
+  extensions:
+    - SilverStripers\ElementalSearch\Extensions\ElementDocumentGeneratorExtension
+
+DNADesign\Elemental\Models\CarouselElement:
+  extensions:
+    - SilverStripers\ElementalSearch\Extensions\ElementDocumentGeneratorExtension
+
+Revolution\Seed\GroupedCard:
+  extensions:
+    - SilverStripers\ElementalSearch\Extensions\ElementDocumentGeneratorExtension    
+
+#Revolution\Seed\CardGroupItem:
+#  extensions:
+#    - TheWebmen\ElementalGrid\Extensions\BaseElementExtension
+#    - Revolution\Seed\ElementExtension
 
 #TheWebmen\ElementalGrid\Models\ElementRow:
 #  extensions:
@@ -93,6 +109,10 @@ SilverStripe\UserForms\Model\EditableRadioField:
 #SilverStripe\Blog\Model\BlogPost:
 #  extensions:
 #    - Revolution\Seed\BlogPostExtension
+
+#SilverStripers\ElementalSearch\Model\SearchDocument:
+#    search_x_path:
+#        - /html/body/main
 
 Silverstripe\SiteConfig\SiteConfig:
   extensions:
