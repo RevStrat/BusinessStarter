@@ -23,10 +23,9 @@
                     </li>
                 <% end_loop %>
             </ul>
+            <% include InlineSearch %>
+            <% include LocaleSwitcher %>
         </div>
-        
-        <% include InlineSearch %>
-        <% include LocaleSwitcher %>
     </div>
 </nav>
 <% end_cached %>

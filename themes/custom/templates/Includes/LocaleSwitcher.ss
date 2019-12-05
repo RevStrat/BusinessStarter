@@ -1,5 +1,5 @@
 <% if $Locales %>
-<div class="dropdown ml-sm-3">
+<div class="dropdown my-3 my-lg-0 ml-lg-3">
     <button class="btn btn-secondary dropdown-toggle" type="button" id="localeSwitcher" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         $SelectedLanguage.Title
     </button>
