@@ -1,5 +1,5 @@
 <% cached 'navigation', $List('SilverStripe\CMS\Model\SiteTree').max('LastEdited'), $List('SilverStripe\CMS\Model\SiteTree').count(), $CurrentLocale %>
-<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-primary">
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
         <% with SiteConfig %>
             <a class="navbar-brand" href="$BaseHref"><% if $Logo %>$Logo<% else %>$Title<% end_if %></a>
