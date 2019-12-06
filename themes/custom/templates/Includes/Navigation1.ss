@@ -8,7 +8,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse offcanvas bg-dark" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <% loop $Menu(1) %>
                     <li class="nav-item<% if $LinkingMode == 'current' %> active<% end_if %><% if Children %> dropdown<% end_if %>">
