@@ -22,11 +22,28 @@ Habitat.life. by Rob Rankin (revolutionstrategy.com, @revstrat) for Habitat Life
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <link rel="shortcut icon" href="themes/habitat/images/favicon.ico" />
+    <style type="text/css">
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+        .login_window {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .btn-toolbar {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
 </head>
 <body class="LoginPage typography" <% if $i18nScriptDirection %>dir="$i18nScriptDirection"<% end_if %>>
     <div class="login_window">
         $Form
     </div>
-    <% include Analytics %>
 </body>
 </html>
